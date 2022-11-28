@@ -11,13 +11,14 @@ public class Main {
     /**
      * Se crea un sistema para registrar personas y dependiendo del usuario
      * se le asignan más datos. Cada una de las clases Cliente, Empleado, Usuario
-     * heredan de la clase persona. Por lo que heredan sus atributos.
+     * heredan de la clase persona. Y por esto se heredan sus atributos, los cuales son requeridos para llenar los constructores
+     * correspondinete a cada clase hija.
      */
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
         int opcion;
-        String mensajeOpciones = "Realizar acción: \n" +
+        String mensajeOpciones = "Seleccione la acción que desea realizar: \n" +
                 "1) Registrar Empleado\n" +
                 "2) Registrar Usuario\n" +
                 "3) Registrar Cliente\n" +
